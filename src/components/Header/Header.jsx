@@ -9,7 +9,7 @@ import cartIconIcon from '../../assets/icons/svgs/cartIcon.svg'
 
 const MyHeader = () => {
   return (
-    <div className='flex justify-center items-center '>
+    <div className='flex justify-center items-center absolute top-0 left-0 right-0'>
       <div className='w-[1250px] flex items-center justify-between h-20 '>
         <div className='flex justify-center items-center gap-5'>
           <div className='flex justify-center items-center gap-2.5 '>

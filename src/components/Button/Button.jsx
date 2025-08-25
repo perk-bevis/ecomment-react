@@ -1,16 +1,7 @@
 import React from 'react'
 
-const MyButton = () => {
-  return (
-    <div>
-      <button className='w-[30px] h-[30px] bg-[#fff] border-solid border-[1px] border-[#e1e1e1]'>
-        M
-      </button>
-      <button className='w-[44px] h-[44px] bg-[#fff] rounded-[50%] border-[1px] border-[#e1e1e1]'>
-        X
-      </button>
-    </div>
-  )
+const MyButton = ({content}) => {
+  return <button className='cursor-pointer outline-none h-[42px] bg-[#333] text-white border-solid border-[1px] w-[50%] items-center hover:bg-transparent hover:text-[#888] hover:border-[#888] hover:border-solid hover:border-[1px]'>{content}</button>
 }
 
 export default MyButton
