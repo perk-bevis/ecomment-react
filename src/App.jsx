@@ -8,11 +8,10 @@ function App() {
 
   return (
     <>
-    <MainLayout>
+
       <MyHeader/>
       {/* content
       <MyFooter/> */}
-    </MainLayout>
     </>
   )
 }

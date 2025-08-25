@@ -2,7 +2,7 @@ import React from 'react'
 import fbIcon from "../../../assets/icons/svgs/fbIcon.svg"
 import insIcon from "../../../assets/icons/svgs/insIcon.svg"
 import ytbIcon from "../../../assets/icons/svgs/ytbIcon.svg"
-//type pb xem fc nào hiển thị icon nào
+//type phân biệt xem function nào hiển thị icon nào
 //nd địa chỉ trang web để chuyển hướng đến trang web đó
 const BoxIcon = ({ type, href }) => {
   const handleRenderIcon = (type) => {
