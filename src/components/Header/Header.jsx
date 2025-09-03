@@ -9,21 +9,21 @@ import cartIconIcon from '../../assets/icons/svgs/cartIcon.svg'
 
 const MyHeader = () => {
   return (
-    <div className='flex justify-center items-center absolute top-0 left-0 right-0'>
+    <div className='flex justify-center items-center absolute top-0 left-0 right-0 z-50'>
       <div className='w-[1250px] flex items-center justify-between h-20 '>
         <div className='flex justify-center items-center gap-5'>
           <div className='flex justify-center items-center gap-2.5 '>
             {/* <BoxIcon type={"fb"} href={''}/> */}
             {
-              dataIcon.map((item) => {
-                return <BoxIcon type={item.type} href={item.href} />
+              dataIcon.map((item,index) => {
+                return <BoxIcon key={index} type={item.type} href={item.href} />
               })
             }
           </div>
           <div className='flex justify-center items-center gap-10'>
             {
-              dataMenu.slice(0, 3).map((item) => {
-                return <Menu content={item.content} href={item.href} />
+              dataMenu.slice(0, 3).map((item, index) => {
+                return <Menu key={index} content={item.content} href={item.href} />
               })
             }
           </div>
@@ -34,8 +34,8 @@ const MyHeader = () => {
         <div className='flex justify-center items-center gap-5'>
           <div className='flex justify-center items-center gap-5'>
             {
-              dataMenu.slice(3, dataMenu.length).map((item) => {
-                return <Menu content={item.content} href={item.href} />
+              dataMenu.slice(3, dataMenu.length).map((item,index) => {
+                return <Menu key={index} content={item.content} href={item.href} />
               })
             }
           </div>

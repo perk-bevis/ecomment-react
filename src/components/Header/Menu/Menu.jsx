@@ -2,7 +2,7 @@ import React from 'react'
 
 const Menu = ({ content, href }) => {
   return (
-    <div className=' pt-[9px] text-[15px] text-black
+    <div className='
     relative cursor-pointer 
     after:content-[""] after:absolute after:bottom-0 after:left-0 
     after:w-full after:h-[3px] after:bg-black after:origin-right

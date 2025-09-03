@@ -7,7 +7,7 @@ const MyInfo = () => {
     return (
         <>
             <MainLayout>
-                <div className="flex justify-between items-center bg-[#333] mt-[-75px] px-[55px] py-[20px]">
+                <div className="flex justify-between items-center bg-[#333] mt-[-75px] px-[55px] py-[20px] flex-nowrap overflow-x-auto">
                     {dataInfo.map((item) => (
                         <InfoCard
                             key={item.title}
